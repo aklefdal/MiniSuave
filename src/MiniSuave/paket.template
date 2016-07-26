@@ -1,0 +1,25 @@
+type project
+title
+    MiniSuave
+owners
+    Alf Kåre Lefdal
+authors 
+    Alf Kåre Lefdal
+projectUrl
+    http://github.com/aklefdal/MiniSuave
+iconUrl
+    https://raw.githubusercontent.com/aklefdal/MiniSuave/master/docs/files/img/logo.png
+licenseUrl
+    http://github.com/aklefdal/MiniSuave/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2015
+tags
+    Suave Fsharp
+summary
+    Creating a miniture version of Suave. Chapter 1 in F# Applied
+description
+    Description not set
+
+
