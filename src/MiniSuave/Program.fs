@@ -12,5 +12,14 @@ let main argv =
     let response = {Content = ""; StatusCode = 200}
     let context = {Request = request; Response = response}
 
-    executeInLoop context (GET >=> Path "/hello" >=> OK "hello")
+    let app = Choose [
+                GET >=> Path "/hello" >=> OK "Hello GET"
+                POST >=> Path "/hello" >=> OK "Hello POST"
+                Path "/foo" >=> Choose [
+                                GET >=> OK "Foo GET"
+                                POST >=> OK "Foo POST"
+                                ]
+            ]
+
+    executeInLoop context app
     0
